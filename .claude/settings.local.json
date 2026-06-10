@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.adyen.com)",
+      "WebFetch(domain:investors.adyen.com)",
+      "WebSearch",
+      "WebFetch(domain:brand.adyen.com)",
+      "Bash(python3 -c ' *)",
+      "Read(//tmp/**)",
+      "Bash(curl -sL \"https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download\" -o adyen_ar2025.pdf)",
+      "Bash(curl -sL \"https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjgyOTA3LCJ0aW1lc3RhbXAiOjE3NTU3NjI1ODEsInZlcnNpb24iOjE3NTU3NjI1NTh9:adyen:AnY4yqsJ-O5B_fRhiYXZpTaJ2RO2xhk5zUPFwcJanNc/download\" -o adyen_h1_2025.pdf)",
+      "Bash(python3)",
+      "WebFetch(domain:financialreports.eu)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://financialreports.eu/api/filings/32906008/markdown/\" -o ar_md.txt -w \"HTTP %{http_code}, size %{size_download}\\\\n\")",
+      "Bash(head -c 600 ar_md.txt)"
+    ]
+  }
+}
