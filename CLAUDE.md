@@ -167,6 +167,29 @@ The four swing inputs to scrutinise hardest and flag for the red team:
 Group revenue CAGR, Y-end revenue, TV % of EV, and implied terminal EV/NOPAT are
 OUTPUTS to read for the methodology gate — never inputs.
 
+## Monitoring loop (after a completed run)
+
+A full run (stages 1–9) produces a one-time verdict; a multi-year hold is
+*maintained*, not decided once. Maintenance runs as a separate, recurring loop
+that does NOT re-run the pipeline:
+
+- `THESIS.md` (company root, living file) — the compressed thesis: swing inputs +
+  assumed paths, falsifiers, the moat call, and a "things to follow up on" watch
+  list. Created by `/thesis` from a completed run; updated thereafter. It outlives
+  any single run snapshot.
+- `/thesis` — run once after `/verdict` to create THESIS.md.
+- `/earnings-update` — run on each earnings report (or a guidance change, M&A, or
+  management change — never on price moves). Checks the ER against the thesis,
+  appends a dated log entry, updates the watch list, returns a HOLD/ADD/TRIM/SELL
+  delta. Re-runs the model only if a falsifier trips or a swing input materially
+  deviates — otherwise the tracker update is the whole job.
+
+The `/earnings-update` assessment runs in the `skeptic` subagent specifically to
+fight the disposition effect: the failure mode in monitoring is explaining away
+bad news to avoid selling (or panicking on one noisy quarter). Hold the sell
+discipline — act on thesis change, not price; a price fall on an intact thesis is
+an ADD candidate, not a sell.
+
 ## UK / ISA context
 
 Investor holds via two family ISAs (~£40k/yr combined). No CGT inside an ISA, so

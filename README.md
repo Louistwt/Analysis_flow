@@ -39,6 +39,26 @@ not speed.
 
 ---
 
+## Monitoring after a run (the maintenance loop)
+
+A verdict is a snapshot. To hold for years you maintain a living thesis, not the
+whole pipeline:
+
+| Command | When | Reads | Writes |
+|---------|------|-------|--------|
+| `/thesis` | once, after `/verdict` | 07, 09, 06b | THESIS.md (living) |
+| `/earnings-update` | each ER / major event | THESIS.md, `_er-input.md` | THESIS.md (appends log) |
+
+`THESIS.md` holds the swing inputs + their assumed paths, the falsifiers, and a
+**"things to follow up on"** watch list you can edit anytime or add to when you
+run an update. `/earnings-update` checks the new report against it, marks each
+falsifier (not-yet / WATCH / TRIPPED), distinguishes a trend from a noisy quarter,
+and gives a HOLD/ADD/TRIM/SELL delta — re-modelling only when a trigger fires.
+Like the critique and red-team stages, it runs in the `skeptic` subagent so you
+don't talk yourself out of a broken thesis.
+
+---
+
 ## Why the manual Sheet hand-off (and how to automate later)
 
 42 input cells take ~2 minutes to paste, and pasting by hand means you review
