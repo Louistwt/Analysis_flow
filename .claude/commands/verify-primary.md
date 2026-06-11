@@ -25,7 +25,11 @@ Write `04c-primary-financials.md`:
    (e.g. an SBC line that contradicts headcount direction).
 4. **Structured output** — one table in the financials shape:
    `Line | Period | Absolute (as reported) | Source: <doc>, p./note | Recomputed | Tag | Flag`
-5. **Remaining gaps** — anything NotebookLM still could not source, so the user
+5. **Material-engine primitives are load-bearing, not optional.** If a lender
+   engine was flagged, its cost of funds / NIM / cohort loss curves / funding mix
+   / capital ratios must be sourced and reconciled like any swing input — flag a
+   missing one explicitly (it blocks a clean grade), never silently omit it.
+6. **Remaining gaps** — anything NotebookLM still could not source, so the user
    knows what to OCR by hand or send for direct extraction.
 
 Only figures that pass reconciliation AND carry a real citation may be tagged

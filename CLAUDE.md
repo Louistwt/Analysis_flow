@@ -69,6 +69,11 @@ and stop. The human reviews between stages. Do not run ahead.
   Drivers: premium volume × loss/expense ratios × float yield.
 - *Bank / lender*: loan book × NIM × cost-of-risk.
 - Do **not** use PEG as a primary lens; it misleads at both extremes.
+- *Lender / credit arm* (standalone or an engine within a hybrid): loan book ×
+  NIM × cost-of-risk, valued on book/ROE (residual income or justified P/B) at its
+  own cost of equity, with equity-capital consumption modelled. Never a revenue-DCF.
+- *Multi-engine hybrid*: SOTP of the engine lenses above; the consolidated DCF is
+  a cross-check, not the primary.
 
 **Falsification:** every thesis names three credible bear cases, the leading
 indicator for each, and what would have to be true to underperform a global
@@ -124,6 +129,29 @@ The engine answers, in order:
    the pie growing, who holds the chokepoint); /growth-decomposition applies it
    to the company and hands the result — penetration ceiling on volume growth,
    and the take-rate assumption — to /assumptions.
+
+**Sum-of-the-parts rule (multi-engine businesses).** Value each material engine on
+its own lens and carry the split THROUGH to valuation; the consolidated DCF is a
+*cross-check*, not the primary. A **lender engine** is valued on loan book × NIM ×
+cost-of-risk, modelling the equity capital it consumes (distributable FCFE = net
+income − increase in required equity capital), via residual income or justified
+P/B = (ROE − g)/(CoE − g) at the arm's own cost of equity — never capitalised as
+recurring revenue. SOTP and the consolidated DCF should reconcile within a band;
+if they diverge, the SOTP wins.
+
+**Earnings-quality rule (generalises the Adyen finance-income lesson).** Separate
+operating income from fee income, net interest income, and float/investment
+income. They have different durability — do not capitalise them at one terminal
+multiple. This is required for any hybrid, not "minor."
+
+**Margins-as-outputs rule.** Terminal EBIT margin is a mix-weighted output —
+Σ(segment margin × terminal weight), reconciled to history — not a top-down
+assertion, exactly as group revenue CAGR is an output of the glide.
+
+**EM / multi-country rule.** Per-country real-volume-vs-inflation/FX decomposition
+(IAS 29 monetary gain/loss for hyperinflation), not a single group constant-
+currency number. Country-risk premium in WACC is value-weighted, not
+revenue-weighted.
 
 ## The DCF assumptions contract (used in /assumptions)
 

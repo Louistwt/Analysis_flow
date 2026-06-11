@@ -55,6 +55,11 @@ Then tailor the body to the lens. Always require, with the rules above:
     the latest dated balance sheet.
 - For cash-flow-sensitive businesses, require OCF reconciled to net income with
   the driver named (e.g. working-capital or settlement-balance timing).
+- If stage 1 flagged a LENDER engine, require its load-bearing primitives as
+  first-class tables — treat a missing one like a missing TPV: blended cost of
+  funds, NIM, vintage/cohort loss curves, funding mix, capital/leverage ratios,
+  deposit base. If EM/hyperinflationary, require per-country real-vs-inflation
+  splits, not just a group constant-currency number.
 - The operating-driver time series from stage 1, as FIRST-CLASS TABLES (not
   prose): volume and price per period for 5+ years (e.g. TPV and take rate);
   the SAME primitive for named competitors (e.g. competitor TPV + growth);

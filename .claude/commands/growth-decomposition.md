@@ -21,6 +21,10 @@ This is a mandatory gate for any business whose value is driven by unit economic
    losing share of the primitive? Flag any peer out-growing it.
 4. **Penetration vs TAM and vs peers.** player volume ÷ TAM; where did comparable
    players decelerate? This sets the **ceiling on how high volume growth can stay**.
+4b. **Per-engine and (if EM) per-country.** Decompose each engine on its own
+   primitive. For a hyperinflationary geography, split growth into real volume vs
+   inflation/FX (IAS 29 — note the monetary gain/loss); do not read nominal local
+   growth as real.
 5. **Forward path, built bottom-up** from volume × price, NOT a top-down CAGR.
    Flag every disclosure gap (e.g. regional take-rate non-disclosure) as a known
    limitation.
