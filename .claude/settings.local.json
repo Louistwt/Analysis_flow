@@ -14,7 +14,9 @@
       "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://financialreports.eu/api/filings/32906008/markdown/\" -o ar_md.txt -w \"HTTP %{http_code}, size %{size_download}\\\\n\")",
       "Bash(head -c 600 ar_md.txt)",
       "mcp__claude_ai_Google_Drive__search_files",
-      "mcp__claude_ai_Google_Drive__read_file_content"
+      "mcp__claude_ai_Google_Drive__read_file_content",
+      "mcp__claude_ai_Google_Drive__create_file",
+      "mcp__claude_ai_Google_Drive__copy_file"
     ]
   }
 }

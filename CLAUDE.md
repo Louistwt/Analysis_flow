@@ -95,6 +95,12 @@ consistency; operating vs non-operating income. These framing checks outrank any
 single data point — a mis-framed model with clean data still gives the wrong
 verdict. (That file is authoritative; this is a pointer.)
 
+For **build-ahead / capex-super-cycle hybrids** (hyperscaler cloud, AI compute —
+infrastructure built ahead of revenue), `framework/capex-supercycle-hybrids.md` is
+the archetype playbook: glide capex AND D&A (not flat), ~15yr horizon, owner
+earnings, SOTP with the build-ahead capex charged to the backlog engine, and the
+discount rate as the dominant swing. `/classify` flags the archetype (item 5b).
+
 ## The value-capture discipline (used in /industry-map)
 
 Decomposing an industry into layers is only useful if it answers: **where do
@@ -129,6 +135,13 @@ The engine answers, in order:
    the pie growing, who holds the chokepoint); /growth-decomposition applies it
    to the company and hands the result — penetration ceiling on volume growth,
    and the take-rate assumption — to /assumptions.
+
+**Revenue-build rule.** Where the operating drivers are quantifiable, the model's
+revenue line IS the bottom-up build (volume × price × share, per year) carried
+forward from /growth-decomposition — group revenue growth/CAGR is an OUTPUT of the
+build, never a typed Y1→Y-end glide (the smooth glide is the fallback only when
+drivers aren't disclosable). Every forecast year stays grounded in unit economics,
+not a smoothed assertion.
 
 **Sum-of-the-parts rule (multi-engine businesses).** Value each material engine on
 its own lens and carry the split THROUGH to valuation; the consolidated DCF is a
@@ -194,6 +207,18 @@ The four swing inputs to scrutinise hardest and flag for the red team:
 
 Group revenue CAGR, Y-end revenue, TV % of EV, and implied terminal EV/NOPAT are
 OUTPUTS to read for the methodology gate — never inputs.
+
+## Scenario construction (driver narrative — not uniform multipliers)
+
+Bear / Base / Bull are three COHERENT stories about **which driver(s) break** —
+never base × 0.7 / 1.3 across every input. For each scenario state: a one-line
+narrative, the specific driver(s) that move and why, and *what has to be true*.
+Within a scenario related drivers move TOGETHER (a demand-digestion Bear lowers
+volume AND pricing AND lifts the discount rate — correlated, not independent dials).
+Each scenario's broken driver maps to a falsifier carried to /redteam and /verdict.
+Built in /assumptions as a scenario-narrative table beside the per-input table;
+gated by /verdict (methodology check 16). A spread made by flexing every input
+independently is mechanical, not a risk model.
 
 ## Monitoring loop (after a completed run)
 

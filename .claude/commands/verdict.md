@@ -22,7 +22,11 @@ each, one line of evidence. In particular:
   artifact with each engine on its own lens, the lender valued on book/ROE with
   capital consumption modelled (not a revenue-DCF)? Do the consolidated DCF and the
   sum-of-parts reconcile within a band? If they diverge, the SOTP is primary —
-  state the gap.
+  state the gap. **Confirm the consolidated cross-check was re-run on the latest
+  base (it goes stale after a revision).**
+- **Build-ahead horizon (#3/#7).** For a capex-super-cycle name, high TV-reliance
+  from *suppressed near-term FCF* is a HORIZON problem — confirm the ~15yr window was
+  used, not a 10yr window that dumps the J-curve recovery into the terminal.
 - **Load-bearing primitive (#13).** Do NOT pass-to-grade if a material engine's
   load-bearing primitive is unsupported (e.g. a lender's cost of funds / NIM /
   loss curves). Grade only with an explicit, sized caveat.
@@ -37,7 +41,11 @@ first. Framing errors outrank data.
 Write `09-verdict.md`:
 1. Quality grade — A / B / C / Fail, with the deciding facts (per engine if hybrid).
 2. Valuation read — a *range* vs current price, citing the SOTP (primary) and the
-   consolidated DCF (cross-check) bear/base/bull per share. Base is indicative.
+   consolidated DCF (cross-check) bear/base/bull per share. Base is indicative. For a
+   terminal-heavy name, **run the WACC bridge and frame the read as "fair value at
+   hurdle X," not a point** — the discount rate is usually the dominant swing. Treat
+   notable-investor activity (e.g. a large buyer at the current price) as
+   *disconfirming data to stress your hurdle*, not confirmation.
 3. Margin of safety — present or not, given quality and spread width.
 4. Action — Buy now / Watchlist with target entry / Pass (give the band).
 5. The three falsifiers that would trigger a review.

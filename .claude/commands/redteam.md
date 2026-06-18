@@ -2,9 +2,14 @@
 description: Attack the thesis and assumptions (isolated red team)
 ---
 
-Delegate to the **`skeptic` subagent** in a clean context. Give it
-`07-assumptions.md`, `05-industry-map.md`, and `framework/methodology-checks.md`
-only — withhold any bull framing.
+Delegate to the **`skeptic` subagent** in a clean context. Give it the evidentiary
+base it needs to mount GROUNDED attacks — `07-assumptions.md`, the SOTP build
+(`07b-sotp.md` if present), `06b-growth-decomposition.md` (the growth attack MUST
+target a primitive from here), `06-tech.md` (competitor/structural data),
+`05-industry-map.md`, `04c-primary-financials.md` (the hard numbers),
+`framework/methodology-checks.md`, and `framework/capex-supercycle-hybrids.md` (if a
+build-ahead name) — but withhold the bull NARRATIVE; the skeptic attacks the numbers,
+it is not persuaded by the framing.
 
 Write `08-redteam.md`:
 
@@ -29,6 +34,17 @@ Write `08-redteam.md`:
      it is as much an error as an ungrounded bull number.
    - Check the bear hasn't been manufactured by over-steepening the in-window fade
      or collapsing the terminal, rather than by a real deterioration thesis.
+3b. **Build-ahead / terminal-heavy attacks (see `framework/capex-supercycle-hybrids.md`):**
+   - **Attack the discount rate explicitly** — for a terminal-heavy name WACC is the
+     dominant swing; run the WACC bridge and show the adverse value at a higher hurdle.
+   - **Smuggled-bull check** — did a base revision lift the answer through the
+     least-supported inputs? Is a segment CAGR set against peer *scale* with no
+     share-bridge? Move it to the Bull.
+   - **Margin-toward-a-falling-target** — is the base gliding "toward peer margins"
+     while those peers are themselves compressing (AI-depreciation)? A relative cost
+     edge against a falling absolute is not a rising margin. Flag double-counted
+     tailwinds (lower-margin hardware mix is growth-up / margin-down).
+   - **Re-center the spread** — flag a bear barely below the base (it understates risk).
 4. **Steelman the market** — the strongest counter to the thesis, not a strawman.
 5. **Underperformance test** — what must be true to lose to a global index over 10
    years?

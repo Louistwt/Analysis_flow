@@ -15,6 +15,11 @@ trusting any DCF output. Getting the data right is necessary but not sufficient.
 3. **Match the explicit horizon to company type — not a longer window.** ~10yr
    growth / ~5yr stable. Carry residual runway with a two-stage / H-model
    terminal, never by steepening the in-window fade or extending the window.
+   *Exception — build-ahead / capex-super-cycle names:* if near-term FCF is
+   suppressed for many years by a build-ahead (8+ yrs negative FCF), the explicit
+   window MUST extend to ~15yr (10+5) to capture the recovery — otherwise the
+   J-curve recovery is dumped into the terminal (see #7 and
+   `capex-supercycle-hybrids.md`).
 
 ## Growth & fade discipline — both directions
 
@@ -36,7 +41,10 @@ trusting any DCF output. Getting the data right is necessary but not sufficient.
 
 7. **Terminal value sanity.** Back out the implied terminal exit multiple
    (EV/NOPAT at the final year); sanity-check vs comparables. Keep TV well under
-   ~65% of EV — a longer explicit horizon lowers TV-reliance.
+   ~65% of EV — a longer explicit horizon lowers TV-reliance. If TV-reliance is
+   high because near-term FCF is *suppressed by a build-ahead* (not because the
+   business is genuinely terminal-weighted), that is a HORIZON problem — extend the
+   window (#3 exception), don't accept it.
 8. **SBC / dilution consistency.** Model share-count growth or treat SBC as a cash
    cost — not neither. (If SBC is already in the EBIT you use, no add-back needed.)
 9. **Earnings-quality decomposition (NOT "minor").** Separate operating income
@@ -84,6 +92,20 @@ trusting any DCF output. Getting the data right is necessary but not sufficient.
 15. **Value-weighted, not revenue-weighted, country-risk premium.** Weight the
     WACC country-risk premium by each geography's share of *value*, not revenue —
     revenue-weighting over-charges a small but fast-growing risky geography.
+
+## Scenario construction
+
+16. **Scenarios are driver-narrative-constructed, not uniform multipliers.** Each
+    of Bear / Base / Bull names which driver(s) break and what has to be true;
+    related drivers move TOGETHER within a scenario (a digestion Bear moves volume,
+    pricing, and the discount rate in concert). A spread built by multiplying every
+    input by a constant (base × 0.7 / 1.3) is mechanical noise, not a risk model —
+    reject it. Each broken driver should map to a falsifier.
+17. **Revenue is built, not glided, where drivers are quantifiable.** The forecast
+    revenue line is the bottom-up build (volume × price × share, per year), and
+    group growth/CAGR is an OUTPUT of it — a smoothed Y1→Y-end glide is the fallback
+    only when the drivers aren't disclosable. A glide that was never reconciled to a
+    unit-economics build is an assertion.
 
 ## How to apply
 
