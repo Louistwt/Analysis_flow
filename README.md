@@ -39,6 +39,31 @@ not speed.
 
 ---
 
+## Surveying an industry first (the industry sub-track)
+
+When `00-brief.md` asks to *decompose an industry / find investable layers*
+rather than value one company, run the industry sub-track instead. It is a
+divergent survey — it fans out across layers and ends in a ranked shortlist of
+named candidates, each routed back into the company funnel above at stage 1.
+
+| # | Command | Reads | Writes |
+|---|---------|-------|--------|
+| 1 | `/industry-classify` | 00-brief.md | 01-classification.md |
+| 2 | `/industry-dr-prompt` | 01 | 02-dr-prompt.md |
+| 3 | *(run the prompt in Gemini DeepResearch, paste output)* | — | 03-gemini-report.md |
+| 4 | `/critique-report` | 03 | 04-critique.md |
+| 5 | `/industry-layermap` | 03, 04 | 05-industry-map.md |
+| 6 | `/tech-deepdive` | 05 | 06-tech.md |
+| 7 | `/industry-shortlist` | 05, 06, 04, 01 | 07-shortlist.md |
+
+`07-shortlist.md` is the deliverable — a ranked list of public names per
+investable layer, each tagged with the valuation lens it will take. For each, copy
+`companies/_TEMPLATE` to `companies/<TICKER>/`, seed `00-brief.md` with its thesis
++ lens, and run `/classify` onward. Reuses `/critique-report` and `/tech-deepdive`
+unchanged; the valuation funnel is untouched.
+
+---
+
 ## Monitoring after a run (the maintenance loop)
 
 A verdict is a snapshot. To hold for years you maintain a living thesis, not the

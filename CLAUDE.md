@@ -21,6 +21,32 @@ and stop. The human reviews between stages. Do not run ahead.
 | 8 | /redteam | 08-redteam.md |
 | 9 | /verdict | 09-verdict.md (runs the methodology gate first) |
 
+## Industry sub-track (survey, not valuation)
+
+The stages above are a **valuation funnel** — they converge on one priced verdict
+and need a named issuer (financials, net cash, shares, price). An **industry
+review** is the opposite: a *divergent survey* that fans out across layers and
+ends in a ranked shortlist of candidates, each of which then ENTERS the company
+funnel at stage 1. Use this track when `00-brief.md` asks to decompose an
+industry / find investable layers rather than to value one company.
+
+| # | Command | Writes |
+|---|---------|--------|
+| 1 | /industry-classify | 01-classification.md (layers + player archetypes + value-capture question) |
+| 2 | /industry-dr-prompt | 02-dr-prompt.md (industry-shaped DeepResearch prompt) |
+| 3 | (run prompt in Gemini DeepResearch) | 03-gemini-report.md |
+| 4 | /critique-report | 04-critique.md (reused unchanged — domain-agnostic) |
+| 5 | /industry-layermap | 05-industry-map.md (ranks profit pools, keeps multiple layers live) |
+| 6 | /tech-deepdive | 06-tech.md (reused — chokepoint layer's anchor is the "subject") |
+| 7 | /industry-shortlist | 07-shortlist.md (ranked named candidates → hand-off to the company funnel) |
+
+The track reuses `/critique-report` and `/tech-deepdive` as-is and leaves the
+valuation funnel untouched. Its terminal output is NOT a verdict — it is a routing
+artifact: each shortlisted name is copied into `companies/<TICKER>/`, seeded with
+its entry lens, and run through `/classify` onward. **Cash-cow + optionality**
+names (an existing profitable business funding the robotics/AI bet) go first —
+they carry an SOTP valuation floor and so fail safer.
+
 ## Prime directives
 
 1. **The Base case is indicative, never an answer.** A DCF output is a

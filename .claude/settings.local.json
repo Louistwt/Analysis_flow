@@ -16,7 +16,15 @@
       "mcp__claude_ai_Google_Drive__search_files",
       "mcp__claude_ai_Google_Drive__read_file_content",
       "mcp__claude_ai_Google_Drive__create_file",
-      "mcp__claude_ai_Google_Drive__copy_file"
+      "mcp__claude_ai_Google_Drive__copy_file",
+      "Bash(python3 meli_dcf.py)",
+      "Bash(python3 build_sheet.py)",
+      "Bash(ls HXG/)",
+      "Bash(head -5 HXG/00-brief.md)",
+      "WebFetch(domain:www.mof.go.jp)",
+      "WebFetch(domain:pages.stern.nyu.edu)",
+      "Bash(python3 /tmp/claude-1000/-home-louistse-Projects-valuation-method/564da90d-e3a9-4832-8082-e7c3f4edc4ad/scratchpad/build_csv.py)",
+      "Bash(python3 build_sheet.py --dry-run)"
     ]
   }
 }
