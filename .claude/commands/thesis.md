@@ -3,7 +3,7 @@ description: Distil a completed run into a living THESIS.md for ongoing monitori
 ---
 
 Run ONCE after `/verdict`. Read `07-assumptions.md`, `09-verdict.md`, and
-`06b-growth-decomposition.md`. Distil them into `THESIS.md` at the company root —
+`06-operating-drivers.md`. Distil them into `THESIS.md` at the company root —
 the durable, living file you update each earnings report (NOT a numbered run
 artifact; it outlives any single run). Compress; this is the at-a-glance thesis,
 not a copy of the run.
@@ -24,7 +24,7 @@ Last reviewed: <today> | Status: INTACT | Action: <verdict's action>
 ## Swing inputs — assumed paths (check every ER)
 | Driver | Thesis assumes | Latest actual | As of | On track? |
 |--------|----------------|---------------|-------|-----------|
-| Volume (e.g. TPV) growth | <from 06b/assumptions> | — | — | — |
+| Volume (e.g. TPV) growth | <from 06/assumptions> | — | — | — |
 | Take rate / price | <flat/declining/rising + why> | — | — | — |
 | EBIT margin | <gliding to X> | — | — | — |
 | <other key driver> | | — | — | — |
@@ -43,5 +43,5 @@ Last reviewed: <today> | Status: INTACT | Action: <verdict's action>
 ```
 
 Seed the swing-input table from the four swing inputs + the volume × price
-decomposition in 06b; the falsifiers from the verdict's three review triggers;
+decomposition in 06; the falsifiers from the verdict's three review triggers;
 the watch list from the verdict's "what still needs verifying" + open questions.

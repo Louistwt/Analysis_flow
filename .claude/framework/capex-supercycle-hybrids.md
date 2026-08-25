@@ -34,12 +34,20 @@ only shifts value between engines** — flag the split as the #1 assumption, not
 one. Re-run the consolidated cross-check after ANY base revision (it goes stale silently).
 
 ## 5. The discount rate is the dominant swing — frame the verdict around it
-For a terminal-heavy build-ahead name the **WACC dominates everything**: GOOGL was $296
-@9% vs $381 @8% — the entire gap to the market price (and to notable buyers) was the
-hurdle, not the business. Always run the **WACC bridge** and state the verdict as "fair
-value at hurdle X," never a point. Distinguish **through-cycle beta from spot beta**
+For a terminal-heavy build-ahead name the **discount rate dominates everything**: GOOGL
+was $296 @9% vs $381 @8% — the entire gap to the market price (and to notable buyers) was
+the hurdle, not the business. Always run the **rate bridge** and state the verdict as
+"fair value at hurdle X," never a point. Distinguish **through-cycle beta from spot beta**
 (spot is inflated by the AI run-up). A fortress-balance-sheet compounder rationally
 warrants a lower hurdle than a margin-of-safety active hurdle — say which lens you use.
+
+**Method note — WACC vs APV.** A constant-weight WACC assumes a *fixed* capital
+structure. A build-ahead funded with debt that then **deleverages** as the J-curve turns
+violates that assumption, and the WACC understates value early / overstates it late. Where
+the debt path is material and time-varying, value with **APV** instead: unlevered FCFF at
+the asset return + PV of the tax shields (and − PV of distress) discounted separately
+(methodology #18). The SOTP framing (§4) already points here — the build-ahead engine's
+financing is engine-specific, not a group constant.
 
 ## 6. Two recurring traps
 - **The "smuggled bull":** a segment CAGR set against a peer's *scale* and back-solved to

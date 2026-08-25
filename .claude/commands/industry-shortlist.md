@@ -2,7 +2,7 @@
 description: Terminal artifact — ranked named candidates per investable layer, handed to the company funnel
 ---
 
-Read `05-industry-map.md`, `06-tech.md`, `04-critique.md`, and
+Read `05-industry-map.md`, `06-operating-drivers.md`, `04-critique.md`, and
 `01-classification.md`.
 
 This is the TERMINAL stage of the industry track. An industry review does not end
@@ -53,3 +53,21 @@ not by how exciting the technology is. The exciting name is often the
 commoditising one; the best risk-adjusted entry is often a quality survivor
 carrying the theme as a cheap call, where you win if it scales and survive if it
 doesn't.
+
+## Price discipline (binding — added 2026-08-18)
+
+Per CLAUDE.md prime directive #4, this stage ranks on **business quality and evidence**, never
+on price. Do NOT rank, tier, order, or exclude any candidate using a current multiple, a
+percentile of its own historical range, or its distance from an all-time high. Those are
+statements about the past price series, not the business, and they systematically discard the
+best compounders — a winner sits near its own historical highs *because* it is winning.
+
+Rank on: moat mechanism and its direction · margin level and stability · recurring/annuity
+share · revenue and operating-margin drawdown through real downturns · realised pricing
+achieved · **materialised orders** (booked units, backlog, capacity commitments, installed
+base) · reinvestment runway · floor quality for Route B names.
+
+Each shortlisted name then ENTERS the company funnel at `/classify`, where its own valuation is
+built from its drivers. **Price is compared to that valuation only at `/verdict`**, as the upside
+check and the margin of safety. **Do not record price data in any stage artifact — not even quarantined.**
+`/verdict` retrieves it fresh at the decision.
