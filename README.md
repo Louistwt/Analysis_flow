@@ -13,6 +13,41 @@ Two tracks share one brain (`CLAUDE.md`):
 
 ---
 
+## ★ The operating principle: work *with* Claude, never let it work alone
+
+**This pipeline is only as good as the argument you have with it.** It is deliberately staged and
+human-gated so that you read every output before the next stage fires — not as a formality, but
+because the failure modes are specific, recognisable, and invisible if you let a run proceed
+unattended.
+
+Claude is confidently wrong in predictable ways. Watch for all five:
+
+1. **It adopts your framing instead of testing it.** Whatever you assert in `00-brief.md` tends to
+   become the premise. This is why the brief should say *what you want argued with*, and why stage 1
+   is expected to push back on your own claims rather than restate them.
+2. **It fills gaps with plausible numbers.** A confident figure with a citation-shaped reference is
+   the most dangerous output in the system. Ask where every number came from. "NOT DISCLOSED" is a
+   valid and valuable answer; a smooth interpolation is not.
+3. **It carries a framing error forward silently.** Each stage trusts the last, so a mis-wired
+   driver at stage 1 passes every downstream check and arrives at the verdict looking rigorous.
+   Framing errors outrank data errors — a mis-framed model with clean data still gives the wrong
+   answer.
+4. **It anchors on any number in its context** — including one labelled "quarantined". A warning
+   label does not neutralise an anchor. This is why price is now excluded from every artifact
+   before `/verdict` rather than merely flagged.
+5. **It over-corrects when pushed.** Agreement is not evidence. When you challenge something and
+   Claude concedes, check whether the concession was actually right — a wrong correction accepted
+   too readily is as costly as the original error.
+
+**Questions worth asking at every stage:** Where did this number come from? What would falsify it?
+What did you assume that I never told you? What is the weakest link in this chain, and did you
+spend your effort there or somewhere easier? What did you leave out?
+
+**Never** run several stages back-to-back without reading them, and never carry a conclusion forward
+because it appears in a file. The artifacts are arguments, not answers.
+
+---
+
 ## How it works
 
 1. Open a terminal at the repo root and run `claude`.
@@ -118,8 +153,24 @@ A verdict is a snapshot. A multi-year hold is *maintained*, not decided once.
 
 `THESIS.md` holds the swing inputs and their assumed paths, the falsifiers, the moat call, and a
 watch list. `/earnings-update` marks each falsifier (not-yet / WATCH / TRIPPED), distinguishes a
-trend from a noisy quarter, and returns a HOLD / ADD / TRIM / SELL delta — re-running the model
-only when a falsifier trips or a swing input materially deviates. **A price fall on an intact
+trend from a noisy quarter, and re-runs the model only when a falsifier trips or a swing input
+materially deviates.
+
+> ### ⚠️ The HOLD / ADD / TRIM / SELL delta is Claude's read of the data — not a decision
+>
+> `/earnings-update` returns an opinion formed from the reported figures checked against the
+> written thesis, and **nothing else**. It does not know your position size, your cost basis, your
+> tax situation, what else you hold, what you need the money for, or your tolerance for being wrong
+> — and it cannot weigh any of them. It is a second opinion from a reader who has no stake in the
+> outcome, which is exactly what makes it useful and exactly why it is not sufficient.
+>
+> **The human makes the call.** Treat the delta as an input to your decision, argue with its
+> reasoning, and check whether the evidence it cites actually supports the conclusion it draws.
+> If it says SELL and you disagree, the useful next step is to find which falsifier it thinks
+> tripped and test that specific claim — not to accept or dismiss the verdict wholesale.
+
+It runs in the `skeptic` subagent to fight the disposition effect in both directions: explaining
+away bad news to avoid selling, and panicking on one noisy quarter. **A price fall on an intact
 thesis is an ADD candidate, not a sell.**
 
 ---
@@ -257,13 +308,4 @@ is used by several deep dives; duplicating it into each one is how the copies dr
 
 ## Context
 
-UK investor, two family ISAs (~£40k/yr combined). No CGT inside an ISA, so rebalancing is
-friction-free. 15% US dividend withholding (W-8BEN); Dutch withholding likewise 15%. Active sleeve
-is 20–40% of capital, the rest broad index ETFs plus BRK.B. Sizing 8–15 names at 4–10% at cost.
-Sell on broken thesis, deteriorating capital allocation, or structural ROIC decline — **not on
-price moves or macro fear**.
-
-Some foreign names are bought on **GETTEX (Munich) in EUR** rather than the home exchange: model
-in the reporting currency, price-check in EUR, and treat the cross rate as a first-order swing.
-
-Not investment advice. Research scaffolding only.
+UK investor. Not investment advice. Research scaffolding only.
